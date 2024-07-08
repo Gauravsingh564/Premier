@@ -268,14 +268,13 @@ nav .right i{
     font-family: 'RightGrotesk';
     font-style: italic;
     font-size: 1.3vw;
-    /* background-color: #ddd; */
     padding: .5vw .7vw;
     margin-left: 1vw;
     border-radius: 50%;
     transition: all;
     transition-duration: .5s;
     transition-timing-function: linear;
-    transition-delay: .5s;
+    transition-delay: 0s;
     
 }
 
@@ -339,3 +338,79 @@ nav .right i{
     font-weight: 500;
 
 }
+
+/* page_2 section ends---------------------------------------------- */
+
+.page_3{
+    height: 100%;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.page_3 .left .imgDiv_1{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.page_3 .left .imgDiv_1 i{
+        font-size: 2.9vw;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50% , -50%);
+}
+.page_3 .left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.page_3 .left h2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'RightGrotesk';
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+.page_3 .right{
+    height: 100%;
+    width: 50%;
+   
+}
+.page_3 .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+}
+
+/* page_3 section ends------------------------------------------------- */
+
+.page_4{
+    height: 90%;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_4Container{
+    height: 100%;
+    width: 80%;
+}
+.page_4Container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* page_4 section ends-------------------------------------------- */
