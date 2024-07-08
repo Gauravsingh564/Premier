@@ -232,3 +232,110 @@ nav .right i{
 }
 
 /* models section ends--------------------------------------- */
+
+.letters{
+    width: 100%;
+    height: 5vw;
+    border-top: .2vw solid #111;
+    border-bottom: .2vw solid #111;
+    display: flex;
+    align-items: center;
+    padding: 1vw 4vw;
+    gap: 1vw;
+    cursor: pointer;
+    
+}
+.letters h3{
+    
+    font-family: 'RightGrotesk';
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2.3vw;
+    font-weight: 400;
+    border-bottom: .2vw solid #111;
+}
+.letters .alphabet{
+    height: 100%;
+    width: 100%;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.letters p{
+    text-transform: uppercase;
+    font-family: 'RightGrotesk';
+    font-style: italic;
+    font-size: 1.3vw;
+    /* background-color: #ddd; */
+    padding: .5vw .7vw;
+    margin-left: 1vw;
+    border-radius: 50%;
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+    
+}
+
+.letters p:hover{
+    border: .1vw solid #ddd;
+}
+
+/* letters section ends------------------------------------------- */
+
+.page_2{
+    width: 100%;
+    height: 100%;
+    padding: 3.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    
+}
+.page_2 .left{
+    height: 100%;
+    width: 50%;
+  
+}
+.page_2 .left img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    
+}
+
+.page_2 .left h1{
+    font-family: 'RightGroteskBold';
+    font-size: 3.3vw;
+}
+.page_2 .right{
+    height: 100%;
+    width: 30%;
+    
+}
+
+.page_2 .right img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.page_2 .right .txt{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page_2 .right .txt p{
+    width: 50%;
+    font-family: 'RightGrotesk';
+    font-size: 1.3vw;
+
+}
+
+.page_2 .right .txt h3{
+    font-family: 'RightGrotesk';
+    font-size: 1.5vw;
+    font-weight: 500;
+
+}
