@@ -500,3 +500,198 @@ nav .right i{
 }
 
 /* update section ends--------------------------------------------- */
+
+.page_5{
+    height: 100%;
+    width: 100%;
+    padding: 3.4vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.page_5 .left{
+    width: 40%;
+    height: 100%;
+}
+
+.page_5 .left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page_5 .right{
+    height: 100%;
+    width: 40%;
+}
+
+.page_5 .right .top h1{
+    font-family: 'RightGroteskBold';
+    font-size: 3.5vw;
+}
+
+.page_5 .right .top h3{
+    font-family: 'RightGrotesk';
+    margin: 25px 0px;
+}
+
+.page_5 .right .top p{
+    font-family: 'RightGrotesk';
+    font-weight: 400;
+    font-size: 1.1vw;
+    margin: 25px 0px;
+}
+
+.page_5 .right .bottom{
+    width: 100%;
+    height: calc(100% - 46%);
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.page_5 .right .bottom .left{
+    width: 50%;
+    height: 100%;
+}
+.page_5 .right .bottom .left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page_5 .right .bottom .right{
+    width: 50%;
+    height: 100%;
+}
+
+.page_5 .right .bottom .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* page_5 section ends -------------------------------------- */
+
+.page_6{
+    height: 90%;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_6Container{
+    height: 100%;
+    width: 80%;
+}
+.page_6Container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* page_6 section ends---------------------------------------- */
+
+.page_7{
+    width: 100%;
+    height: 100%;
+    padding: 3.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    
+}
+.page_7 .left{
+    height: 100%;
+    width: 48%;
+  
+}
+.page_7 .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+.page_7 .left h1{
+    font-family: 'RightGroteskBold';
+    font-size: 3.3vw;
+}
+.page_7 .right{
+    height: 100%;
+    width: 30%;
+    
+}
+
+.page_7 .right img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.page_7 .right .txt{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page_7 .right .txt p{
+    width: 50%;
+    font-family: 'RightGrotesk';
+    font-size: 1vw;
+
+}
+
+.page_7 .right .txt h3{
+    font-family: 'RightGrotesk';
+    font-size: 1.5vw;
+    font-weight: 500;
+
+}
+
+/* page_7 ends------------------------------------------------- */
+
+.textAnimation{
+    width: 1005;
+    height: auto;
+    border-top: .2vw solid #111;
+    border-bottom: .2vw solid #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    padding: 1vw 0vw;
+    gap: 2vw;
+    
+}
+.textAnimation::-webkit-scrollbar{
+    display: none;
+}
+.textAnimation h1{
+    flex-shrink: 0;
+    font-family: 'RightGroteskBold';
+    font-size: 3.3vw;
+    letter-spacing: 3px;
+    font-weight:900px;
+    -webkit-text-stroke: 2px #111;
+    color: transparent;
+    animation: txtAnimation 7s infinite linear;
+}
+@keyframes txtAnimation {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+
+/* textAnimation section ends--------------------------------------------- */
+
+.blog_Sec{
+    height: 80%;
+    width: 100%;
+    padding: 3.5vw;
+    border: 1px solid #111;
+}
