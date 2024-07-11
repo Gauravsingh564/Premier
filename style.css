@@ -414,3 +414,89 @@ nav .right i{
 }
 
 /* page_4 section ends-------------------------------------------- */
+
+.update{
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.update h1{
+    font-family: 'RightGroteskBold';
+    font-size: 4.5vw;
+}
+
+.update .contentDiv{
+    height: 90%;
+    width: 70%;
+    padding: 2vw;
+   
+}
+
+.update .contentDiv .elements{
+    height: auto;
+    width: 100%;
+    padding: 1.1vw 0vw;
+    border-top: .2vw solid #111;
+    display: flex;
+    align-items: center;
+    margin-top: 1.7vw;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+.update .contentDiv .elements img{
+    position: absolute;
+    top: 10px;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+    opacity: 0;
+    transition: all ease .6s;
+}
+.update .contentDiv .elements:nth-child(4) img{
+    top: 2px;
+}
+.update .contentDiv .elements:hover img{
+    opacity: 1;
+    left: 25%;
+}
+.update .contentDiv .elements p{
+    font-family: 'RightGrotesk';
+    font-size: 1.4vw;
+    padding-top: 1.2vw;
+}
+
+.update .contentDiv .elements:nth-child(4){
+    border-bottom: .2vw solid #111;
+    padding-bottom: 2vw;
+}
+
+.update .contentDiv .elements h2{
+    font-family: 'RightGrotesk';
+    font-weight: 400;
+    font-size: 2.2vw;
+    position: relative;
+    text-align: start;
+}
+.sec{
+    margin-right: 4.4vw;
+}
+.sec_2{
+    margin-right: 7vw;
+}
+.update .contentDiv .elements h2::after{
+    content: '25TH MARCH 2020';
+    top: 100%;
+    left: 0;
+    position: absolute;
+    font-size: 1vw;
+}
+
+/* update section ends--------------------------------------------- */
