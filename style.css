@@ -38,7 +38,10 @@ nav .left{
     height: 100%;
     width: 40vw;
 }
-
+nav .ri-menu-line{
+    font-size: 2vw;
+    display: none;
+}
 .left .logo a{
     text-decoration: none;
     color: #111;
@@ -202,7 +205,7 @@ nav .right i{
     width: 100%;
     /* background-color: aqua; */
     padding: 1vw;
-    display: flex;
+    white-space:nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
    
@@ -212,22 +215,22 @@ nav .right i{
     display: none;
 }
 .imgDiv{
-    flex-shrink: 0;
+   display: inline-block;
     height: 100%;
-    width: 100%;
+    width: 110%;
     /* background-color: purple; */
-    display: flex;
-    align-items: center;
+    margin-right: 10px;
+    padding: 2vw;
     animation: scroll 11s infinite linear;
 
 }
 .imgDiv img{
-    height: 80%;
+    height: 100%;
     width: 15%;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
-    margin-right: 20px;
+    margin: 1vw;
 
 }
 
@@ -878,4 +881,194 @@ nav .right i{
     font-family: 'RightGrotesk';
     font-size: 1.2vw;
     margin-top: 1vw;
+}
+
+/* footer section ends---------------------------- */
+
+@media (max-width:400px) {
+    nav{
+        height: 90px;
+        width: 100%;
+        border: .2vw solid #111;
+        display: flex;
+        align-items: center;
+        margin-top: 1.5vw;
+    }
+    nav .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-right: none;
+        padding: .4vw 3vw;
+        height: 100%;
+        width: 100%;
+    }
+    nav .ri-menu-line{
+        font-size: 9vw;
+        display: inline-block;
+        margin-right: 5vw;
+    }
+    .left .logo a{
+        text-decoration: none;
+        color: #111;
+        font-size: 12vw;
+        font-family: 'RightGroteskBold';
+    }
+    
+    .left .logo a::after{
+        content: 'model management';
+        top: 72px;
+        left: 80px;
+        position: absolute;
+        font-size: 3vw;
+        color: gray;
+    }
+    .left .logo a::before{
+        font-family: 'RightGrotesk';
+        content: 'c';
+        top: 30px;
+        left: 160px;
+        position: absolute;
+        font-size: 4vw;
+        color: gray;
+        font-weight: 600;
+        border: .4vw solid gray;
+        border-radius: 50%;
+        padding: 0px 5px 3px 5px;
+    }
+    nav p{
+        display: none;
+    }
+    
+    nav .mid{
+       display: none;
+    }
+    
+    nav .blog{
+       display: none;
+    }
+    nav .right{
+       display: none;
+    }
+    nav .right i{
+       display: none;
+    }
+
+    /* nav section ends----------------------- */
+
+    .hero{
+        height: 60%;
+        position: relative;
+        padding: 4vw;
+    }
+    .videoContainer .content{
+        padding:2vw 2vw;
+    }
+    .videoContainer .content .up h1{
+        font-size: 9vw;
+        line-height: 1;
+    }
+    .box{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        border: 2px solid #ddd;
+        
+    }
+    .line{
+        margin-top: 3vh;
+    }
+    .down{
+        margin-top: 2vw;
+    }
+    .down p{
+        font-size: 3.3vw;
+    }
+    .down i{
+        font-size: 6vw;
+    }
+    
+    /* hero section ends--------------------------------------------------------- */
+    .models{
+        height: 30%;
+    }
+    .imgDiv{
+        /* background-color:#ddd; */
+         width: 210%;
+        padding: 9vw 3vw;
+        animation: scroll 10s infinite linear;
+
+    }
+    .imgDiv img{
+        height:100%;
+        width: 16.5%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position:top;
+    
+    }
+
+    /* models section ends----------------------------------------------- */
+    .letters{
+        height: 10vw;
+        padding-left: .5vw;
+        padding-right:0vw ;
+        gap: 0vw;
+    }
+    .letters h3{
+        font-size: 5vw;
+    }
+    .letters .alphabet{
+        height: 100%;
+        width: 100%;
+    }
+    .letters p{
+        font-size: 3.1vw;
+        margin-left: .3vw;
+    }
+
+    /* letters section ends---------------------------------------- */
+    .page_2{
+        height: 80%;
+        flex-direction: column;
+        border: 1px solid #111;
+        gap: 0vw;
+    }
+    .page_2 .left{
+        height: 50%;
+        width: 100%;
+    }
+    .page_2 .left img{
+        height: 90%;
+        object-position: 30% 30%;   
+    }
+    
+    .page_2 .left h1{
+        font-size: 5.6vw;
+    }
+    .page_2 .right{
+        height: 50%;
+        width: 100%;
+        margin-top: 2vw;   
+    }
+    
+    .page_2 .right img{
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+    }
+    .page_2 .right .txt{
+        display: block;
+    }
+    .page_2 .right .txt p{
+        width: 60%;
+        font-size: 2.6vw;
+        font-weight: 600;
+    }
+    .page_2 .right .txt h3{
+      display: none;
+    }
+    
+    
 }
