@@ -45,20 +45,30 @@ nav .left{
     font-size: 3.3vw;
     font-family: 'RightGroteskBold';
 }
-.left .logo span{
-    font-size: 2.3vw;
-    font-weight: 700;
-}
-.left .logo p{
+
+.left .logo a::after{
+    content: 'model management';
+    top: 86px;
+    left: 130px;
+    position: absolute;
     font-size: 1vw;
-    text-align: right;
+    color: gray;
+}
+.left .logo a::before{
+    font-family: 'RightGrotesk';
+    content: 'c';
+    top: 40px;
+    left: 185px;
+    position: absolute;
+    font-size: 1.2vw;
+    color: gray;
+    font-weight: 400;
+    border: .1vw solid gray;
+    border-radius: 50%;
+    padding: 0px 5px 3px 5px;
 }
 nav p{
     font-family: 'RightGrotesk'; 
-}
-nav .left p{
-    margin-left: 5vw;
-    font-size: 1.4vw;
 }
 
 nav .mid{
@@ -693,5 +703,179 @@ nav .right i{
     height: 80%;
     width: 100%;
     padding: 3.5vw;
-    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_Sec .left{
+    height: 100%;
+    width: 18%;
+}
+
+.blog_Sec .left h1{
+    font-family: 'RightGroteskBold';
+    font-size: 3.6vw;
+}
+
+.blog_Sec .right{
+    height: 100%;
+    width: 68%;
+    display: flex;
+    padding: 2vw;
+    
+}
+.blog_Sec .right .leftDiv{
+    height: 100%;
+    width: 50%;
+    padding: 1.3vw;
+}
+.blog_Sec .right .leftDiv p span{
+    margin-right: 1vw;
+    border: .1vw solid #111;
+    padding: .1vw .4vw;
+    border-radius: 50%;
+    font-size: 1.3vw !important;
+}
+.blog_Sec .right .leftDiv p{
+          font-family: 'RightGrotesk';
+          font-size: 1.3vw;
+          text-align: left;
+          margin-bottom: 2vw;
+}
+.blog_Sec .right .leftDiv .bottom{
+    width: 100%;
+    height: calc(100% - 23%);
+}
+.blog_Sec .right .leftDiv .bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blog_Sec .right .rightDiv .bottom{
+    width: 100%;
+    height: calc(100% - 23%);
+   
+}
+.blog_Sec .right .rightDiv .bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blog_Sec .right .rightDiv p span{
+    margin-right: 1vw;
+    border: .1vw solid #111;
+    padding: .1vw .4vw;
+    border-radius: 50%;
+    font-size: 1.3vw !important;
+}
+.blog_Sec .right .rightDiv p{
+          font-family: 'RightGrotesk';
+          font-size: 1.3vw;
+          margin-bottom: 2vw;
+}
+.blog_Sec .right .rightDiv{
+    height: 100%;
+    width: 50%;
+    padding: 1.3vw;
+}
+
+/* BlogSec Ends------------------------------------------------------------------ */
+
+.footer{
+    width: 100%;
+    height: 40%;
+    border-top: .2vw solid #111;
+    border-bottom: .2vw solid #111;
+    display: flex;
+    cursor: pointer;
+}
+
+.footer .left{
+    height: 100%;
+    width: 40%;
+    border-right: .2vw solid #111;
+    padding: 2vw;
+}
+.footer .left .boxDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .left .boxDiv h1{
+    font-family: 'RightGroteskBold';
+    font-size: 3.3vw;
+    position: relative;
+}
+
+.footer .left .boxDiv h1::after{
+    content: 'model management';
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    font-size: 1vw;
+    color: gray;
+}
+.footer .left .boxDiv h1::before{
+    font-family: 'RightGrotesk';
+    content: 'c';
+    top: 0px;
+    left: 160px;
+    position: absolute;
+    font-size: 1.2vw;
+    color: gray;
+    font-weight: 400;
+    border: .1vw solid gray;
+    border-radius: 50%;
+    padding: 0px 5px 5px 5px;
+}
+.footer .left .boxDiv{
+    font-family: 'RightGrotesk';
+    font-size: 1.5vw;
+}
+
+.footer .mid{
+    height: 100%;
+    width: 20%;
+    border-right: .2vw solid #111;
+    padding: 3vw;
+}
+
+.footer .mid p{
+    font-family: 'RightGrotesk';
+    font-size: 1.5vw;
+}
+
+.footer .right {
+    height: 100%;
+    width: 40%;
+}
+.footer .right .topDiv{
+    width: 100%;
+    height: auto;
+    border-bottom: .2vw solid #111;
+}
+.footer .right .topDiv p{
+    font-family: 'RightGrotesk';
+    font-size: 1.5vw;
+    padding: 3vw;
+}
+.footer .right .bottomContainer{
+    width: 100%;
+    height: auto;
+    padding: 1.3vw;
+}
+
+.footer .right .bottomContainer i{
+    font-size: 1.7vw;
+    margin-right: 10px;
+}
+
+.footer .right .bottomContainer p{
+    font-family: 'RightGrotesk';
+    font-size: 1.2vw;
+    margin-top: 1vw;
 }
