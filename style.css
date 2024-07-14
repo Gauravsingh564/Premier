@@ -1,1074 +1,1137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: 'RightGroteskBold';
-    src: url("Fonts/RightGrotesk-CompactBlack.otf");
+  font-family: "RightGroteskBold";
+  src: url("Fonts/RightGrotesk-CompactBlack.otf");
 }
 @font-face {
-    font-family: 'RightGrotesk';
-    src: url("Fonts/RightGrotesk-Regular.ttf");
+  font-family: "RightGrotesk";
+  src: url("Fonts/RightGrotesk-Regular.ttf");
 }
-html,body{
-    height: 100%;
-    width: 100%;
-}
-
-#main{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-nav{
-    height: 90px;
-    width: 100%;
-    border: .2vw solid #111;
-    display: flex;
-    align-items: center;
-    margin-top: 1.5vw;
-}
-nav .left{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-right: .2vw solid #111;
-    padding: .4vw 3vw;
-    height: 100%;
-    width: 40vw;
-}
-nav .ri-menu-line{
-    font-size: 2vw;
-    display: none;
-}
-.left .logo a{
-    text-decoration: none;
-    color: #111;
-    font-size: 3.3vw;
-    font-family: 'RightGroteskBold';
+#main {
+  height: 100%;
+  width: 100%;
 }
 
-.left .logo a::after{
-    content: 'model management';
-    top: 86px;
-    left: 130px;
-    position: absolute;
-    font-size: 1vw;
-    color: gray;
+nav {
+  height: 90px;
+  width: 100%;
+  border: 0.2vw solid #111;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5vw;
 }
-.left .logo a::before{
-    font-family: 'RightGrotesk';
-    content: 'c';
-    top: 40px;
-    left: 185px;
-    position: absolute;
-    font-size: 1.2vw;
-    color: gray;
-    font-weight: 400;
-    border: .1vw solid gray;
-    border-radius: 50%;
-    padding: 0px 5px 3px 5px;
+nav .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 0.2vw solid #111;
+  padding: 0.4vw 3vw;
+  height: 100%;
+  width: 40vw;
 }
-nav p{
-    font-family: 'RightGrotesk'; 
+nav .ri-menu-line {
+  font-size: 2vw;
+  display: none;
 }
-
-nav .mid{
-    height:100%;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right:.2vw solid #111;
+.left .logo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 3.3vw;
+  font-family: "RightGroteskBold";
 }
 
-nav .blog{
-    height: 100%;
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right:.2vw solid #111;
+.left .logo a::after {
+  content: "model management";
+  top: 86px;
+  left: 130px;
+  position: absolute;
+  font-size: 1vw;
+  color: gray;
 }
-nav .right{
-    height: 100%;
-    width: 5vw;
-    /* border: 1px solid #111; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2vw;
+.left .logo a::before {
+  font-family: "RightGrotesk";
+  content: "c";
+  top: 40px;
+  left: 185px;
+  position: absolute;
+  font-size: 1.2vw;
+  color: gray;
+  font-weight: 400;
+  border: 0.1vw solid gray;
+  border-radius: 50%;
+  padding: 0px 5px 3px 5px;
 }
-nav .right i{
-    font-size: 1.5vw;
-    font-weight: 500;
+nav p {
+  font-family: "RightGrotesk";
+}
+
+nav .mid {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2vw solid #111;
+}
+
+nav .blog {
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2vw solid #111;
+}
+nav .right {
+  height: 100%;
+  width: 5vw;
+  /* border: 1px solid #111; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+}
+nav .right i {
+  font-size: 1.5vw;
+  font-weight: 500;
 }
 
 /* nav section ends----------------------- */
 
-.hero{
-    height: 90%;
-    width: 100%;
-    /* border: 1px solid #111; */
-    position: relative;
-    padding: 4vw;
+.hero {
+  height: 90%;
+  width: 100%;
+  /* border: 1px solid #111; */
+  position: relative;
+  padding: 4vw;
 }
-.hero .videoContainer{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /* border: 1px solid #111; */
-}
-
-.videoContainer video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 4;
-}
-.videoContainer .content{
-    height: 50%;
-    width: 100%;
-    padding:1vw 2vw;
-    /* background-color: aquamarine; */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.videoContainer .content .up{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.videoContainer .content .up h1{
-    font-family:'RightGroteskBold';
-    font-size: 4.2vw;
-    line-height: .85;
-    color: #fff;
-}
-.box{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    position: relative;
-    /* background-color: #111; */
-    border: 1px solid #ddd;
-    /* overflow: hidden; */
-}
-.box .in{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.box .in p{
-    color: #fff;
+.hero .videoContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid #111; */
 }
 
+.videoContainer video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 4;
+}
+.videoContainer .content {
+  height: 50%;
+  width: 100%;
+  padding: 1vw 2vw;
+  /* background-color: aquamarine; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.videoContainer .content .up {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.videoContainer .content .up h1 {
+  font-family: "RightGroteskBold";
+  font-size: 4.2vw;
+  line-height: 0.85;
+  color: #fff;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  /* background-color: #111; */
+  border: 1px solid #ddd;
+  /* overflow: hidden; */
+}
+.box .in {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .in p {
+  color: #fff;
+}
 
-.line{
-    height: .3vh;
-    background-color: #fff;
-    width: 100%;
-    margin-top: 4vh;
+.line {
+  height: 0.3vh;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 4vh;
 }
-.down{
-    margin-top: 1vw;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.down {
+  margin-top: 1vw;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.down p{
-    font-size: 1.5vw;
-    font-family:'RightGrotesk';
-    color: #fff;
-    font-weight: 500;
+.down p {
+  font-size: 1.5vw;
+  font-family: "RightGrotesk";
+  color: #fff;
+  font-weight: 500;
 }
-.down i{
-    color: #fff;
-    font-size: 3vw;
+.down i {
+  color: #fff;
+  font-size: 3vw;
 }
 
 /* hero section ends-------------------------------------------- */
 
-.models{
-    height: 40%;
-    width: 100%;
-    /* background-color: aqua; */
-    padding: 1vw;
-    white-space:nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-   
-
+.models {
+  height: 40%;
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.models::-webkit-scrollbar{
-    display: none;
+.models::-webkit-scrollbar {
+  display: none;
 }
-.imgDiv{
-   display: inline-block;
-    height: 100%;
-    width: 110%;
-    /* background-color: purple; */
-    margin-right: 10px;
-    padding: 2vw;
-    animation: scroll 11s infinite linear;
-
+.imgDiv {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  /* background-color: purple; */
+  /* margin-right: 10px; */
+  padding: 2vw 0vw;
+  animation: scroll 11s infinite linear;
 }
-.imgDiv img{
-    height: 100%;
-    width: 15%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-    margin: 1vw;
+.models .imgDiv_1 img {
+  margin-left: 2.5vw;
+}
+.models .imgDiv .img {
+  margin-left: 2.5vw;
+}
 
+.imgDiv img {
+  height: 100%;
+  width: 13%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: 1vw;
 }
 
 @keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-    
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* models section ends--------------------------------------- */
 
-.letters{
-    width: 100%;
-    height: 5vw;
-    border-top: .2vw solid #111;
-    border-bottom: .2vw solid #111;
-    display: flex;
-    align-items: center;
-    padding: 1vw 4vw;
-    gap: 1vw;
-    cursor: pointer;
-    
+.letters {
+  width: 100%;
+  height: 5vw;
+  border-top: 0.2vw solid #111;
+  border-bottom: 0.2vw solid #111;
+  display: flex;
+  align-items: center;
+  padding: 1vw 4vw;
+  gap: 1vw;
+  cursor: pointer;
 }
-.letters h3{
-    
-    font-family: 'RightGrotesk';
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 2.3vw;
-    font-weight: 400;
-    border-bottom: .2vw solid #111;
+.letters h3 {
+  font-family: "RightGrotesk";
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 2.3vw;
+  font-weight: 400;
+  border-bottom: 0.2vw solid #111;
 }
-.letters .alphabet{
-    height: 100%;
-    width: 100%;
-    margin-left: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.letters .alphabet {
+  height: 100%;
+  width: 100%;
+  margin-left: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.letters p{
-    text-transform: uppercase;
-    font-family: 'RightGrotesk';
-    font-style: italic;
-    font-size: 1.3vw;
-    padding: .5vw .7vw;
-    margin-left: 1vw;
-    border-radius: 50%;
-    transition: all;
-    transition-duration: .5s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    
+.letters p {
+  text-transform: uppercase;
+  font-family: "RightGrotesk";
+  font-style: italic;
+  font-size: 1.3vw;
+  padding: 0.5vw 0.7vw;
+  margin-left: 1vw;
+  border-radius: 50%;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
 }
 
-.letters p:hover{
-    border: .1vw solid #ddd;
+.letters p:hover {
+  border: 0.1vw solid #ddd;
 }
 
 /* letters section ends------------------------------------------- */
 
-.page_2{
-    width: 100%;
-    height: 100%;
-    padding: 3.5vw;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    
+.page_2 {
+  width: 100%;
+  height: 100%;
+  padding: 3.5vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
-.page_2 .left{
-    height: 100%;
-    width: 50%;
-  
+.page_2 .left {
+  height: 100%;
+  width: 50%;
 }
-.page_2 .left img{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    
+.page_2 .left img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
 }
 
-.page_2 .left h1{
-    font-family: 'RightGroteskBold';
-    font-size: 3.3vw;
+.page_2 .left h1 {
+  font-family: "RightGroteskBold";
+  font-size: 3.3vw;
 }
-.page_2 .right{
-    height: 100%;
-    width: 30%;
-    
-}
-
-.page_2 .right img{
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
-.page_2 .right .txt{
-    display: flex;
-    justify-content: space-around;
+.page_2 .right {
+  height: 100%;
+  width: 30%;
 }
 
-.page_2 .right .txt p{
-    width: 50%;
-    font-family: 'RightGrotesk';
-    font-size: 1vw;
-
+.page_2 .right img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.page_2 .right .txt {
+  display: flex;
+  justify-content: space-around;
 }
 
-.page_2 .right .txt h3{
-    font-family: 'RightGrotesk';
-    font-size: 1.5vw;
-    font-weight: 500;
+.page_2 .right .txt p {
+  width: 50%;
+  font-family: "RightGrotesk";
+  font-size: 1vw;
+}
 
+.page_2 .right .txt h3 {
+  font-family: "RightGrotesk";
+  font-size: 1.5vw;
+  font-weight: 500;
 }
 
 /* page_2 section ends---------------------------------------------- */
 
-.page_3{
-    height: 100%;
-    width: 100%;
-    padding: 3.5vw;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
+.page_3 {
+  height: 100%;
+  width: 100%;
+  padding: 3.5vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
-.page_3 .left .imgDiv_1{
-    width: 100%;
-    height: auto;
-    position: relative;
+.page_3 .left .imgDiv_1 {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
-.page_3 .left .imgDiv_1 i{
-        font-size: 2.9vw;
-        position: absolute;
-        top: 50%;
-        left: 35%;
-        transform: translate(-50% , -50%);
+.page_3 .left .imgDiv_1 i {
+  font-size: 2.9vw;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
 }
-.page_3 .left{
-    height: 100%;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.page_3 .left {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page_3 .left h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "RightGrotesk";
+  font-size: 1.8vw;
+  font-weight: 400;
+}
 
+.page_3 .right {
+  height: 100%;
+  width: 50%;
 }
-.page_3 .left h2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-family: 'RightGrotesk';
-    font-size: 1.8vw;
-    font-weight: 400;
-}
-
-.page_3 .right{
-    height: 100%;
-    width: 50%;
-   
-}
-.page_3 .right img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0% 10%;
+.page_3 .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 10%;
 }
 
 /* page_3 section ends------------------------------------------------- */
 
-.page_4{
-    height: 90%;
-    width: 100%;
-    padding: 3.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page_4 {
+  height: 90%;
+  width: 100%;
+  padding: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page_4Container{
-    height: 100%;
-    width: 80%;
+.page_4Container {
+  height: 100%;
+  width: 80%;
 }
-.page_4Container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.page_4Container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* page_4 section ends-------------------------------------------- */
 
-.update{
-    height: 100%;
-    width: 100%;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.update {
+  height: 100%;
+  width: 100%;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.update h1{
-    font-family: 'RightGroteskBold';
-    font-size: 4.5vw;
-}
-
-.update .contentDiv{
-    height: 90%;
-    width: 70%;
-    padding: 2vw;
-   
+.update h1 {
+  font-family: "RightGroteskBold";
+  font-size: 4.5vw;
 }
 
-.update .contentDiv .elements{
-    height: auto;
-    width: 100%;
-    padding: 1.1vw 0vw;
-    border-top: .2vw solid #111;
-    display: flex;
-    align-items: center;
-    margin-top: 1.7vw;
-    justify-content: space-between;
-    cursor: pointer;
-    position: relative;
-}
-.update .contentDiv .elements img{
-    position: absolute;
-    top: 10px;
-    left: 15%;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    object-position: top;
-    opacity: 0;
-    transition: all ease .6s;
-}
-.update .contentDiv .elements:nth-child(4) img{
-    top: 2px;
-}
-.update .contentDiv .elements:hover img{
-    opacity: 1;
-    left: 25%;
-}
-.update .contentDiv .elements p{
-    font-family: 'RightGrotesk';
-    font-size: 1.4vw;
-    padding-top: 1.2vw;
+.update .contentDiv {
+  height: 90%;
+  width: 70%;
+  padding: 2vw;
 }
 
-.update .contentDiv .elements:nth-child(4){
-    border-bottom: .2vw solid #111;
-    padding-bottom: 2vw;
+.update .contentDiv .elements {
+  height: auto;
+  width: 100%;
+  padding: 1.1vw 0vw;
+  border-top: 0.2vw solid #111;
+  display: flex;
+  align-items: center;
+  margin-top: 1.7vw;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.update .contentDiv .elements img {
+  position: absolute;
+  top: 10px;
+  left: 15%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.update .contentDiv .elements:nth-child(4) img {
+  top: 2px;
+}
+.update .contentDiv .elements:hover img {
+  opacity: 1;
+  left: 25%;
+}
+.update .contentDiv .elements p {
+  font-family: "RightGrotesk";
+  font-size: 1.4vw;
+  padding-top: 1.2vw;
 }
 
-.update .contentDiv .elements h2{
-    font-family: 'RightGrotesk';
-    font-weight: 400;
-    font-size: 2.2vw;
-    position: relative;
-    text-align: start;
+.update .contentDiv .elements:nth-child(4) {
+  border-bottom: 0.2vw solid #111;
+  padding-bottom: 2vw;
 }
-.sec{
-    margin-right: 4.4vw;
+
+.update .contentDiv .elements h2 {
+  font-family: "RightGrotesk";
+  font-weight: 400;
+  font-size: 2.2vw;
+  position: relative;
+  text-align: start;
 }
-.sec_2{
-    margin-right: 7vw;
+.sec {
+  margin-right: 4.4vw;
 }
-.update .contentDiv .elements h2::after{
-    content: '25TH MARCH 2020';
-    top: 100%;
-    left: 0;
-    position: absolute;
-    font-size: 1vw;
+.sec_2 {
+  margin-right: 7vw;
+}
+.update .contentDiv .elements h2::after {
+  content: "25TH MARCH 2020";
+  top: 100%;
+  left: 0;
+  position: absolute;
+  font-size: 1vw;
 }
 
 /* update section ends--------------------------------------------- */
 
-.page_5{
-    height: 100%;
-    width: 100%;
-    padding: 3.4vw;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
+.page_5 {
+  height: 100%;
+  width: 100%;
+  padding: 3.4vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
-.page_5 .left{
-    width: 40%;
-    height: 100%;
-}
-
-.page_5 .left img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.page_5 .left {
+  width: 40%;
+  height: 100%;
 }
 
-.page_5 .right{
-    height: 100%;
-    width: 40%;
+.page_5 .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.page_5 .right .top h1{
-    font-family: 'RightGroteskBold';
-    font-size: 3.5vw;
+.page_5 .right {
+  height: 100%;
+  width: 40%;
 }
 
-.page_5 .right .top h3{
-    font-family: 'RightGrotesk';
-    margin: 25px 0px;
+.page_5 .right .top h1 {
+  font-family: "RightGroteskBold";
+  font-size: 3.5vw;
 }
 
-.page_5 .right .top p{
-    font-family: 'RightGrotesk';
-    font-weight: 400;
-    font-size: 1.1vw;
-    margin: 25px 0px;
+.page_5 .right .top h3 {
+  font-family: "RightGrotesk";
+  margin: 25px 0px;
 }
 
-.page_5 .right .bottom{
-    width: 100%;
-    height: calc(100% - 46%);
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
-}
-.page_5 .right .bottom .left{
-    width: 50%;
-    height: 100%;
-}
-.page_5 .right .bottom .left img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.page_5 .right .bottom .right{
-    width: 50%;
-    height: 100%;
+.page_5 .right .top p {
+  font-family: "RightGrotesk";
+  font-weight: 400;
+  font-size: 1.1vw;
+  margin: 25px 0px;
 }
 
-.page_5 .right .bottom .right img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+.page_5 .right .bottom {
+  width: 100%;
+  height: calc(100% - 46%);
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.page_5 .right .bottom .left {
+  width: 50%;
+  height: 100%;
+}
+.page_5 .right .bottom .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page_5 .right .bottom .right {
+  width: 50%;
+  height: 100%;
+}
+
+.page_5 .right .bottom .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* page_5 section ends -------------------------------------- */
 
-.page_6{
-    height: 90%;
-    width: 100%;
-    padding: 3.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page_6 {
+  height: 90%;
+  width: 100%;
+  padding: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page_6Container{
-    height: 100%;
-    width: 80%;
+.page_6Container {
+  height: 100%;
+  width: 80%;
 }
-.page_6Container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+.page_6Container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* page_6 section ends---------------------------------------- */
 
-.page_7{
-    width: 100%;
-    height: 100%;
-    padding: 3.5vw;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    
+.page_7 {
+  width: 100%;
+  height: 100%;
+  padding: 3.5vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
-.page_7 .left{
-    height: 100%;
-    width: 48%;
-  
+.page_7 .left {
+  height: 100%;
+  width: 48%;
 }
-.page_7 .left img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    
+.page_7 .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
-.page_7 .left h1{
-    font-family: 'RightGroteskBold';
-    font-size: 3.3vw;
+.page_7 .left h1 {
+  font-family: "RightGroteskBold";
+  font-size: 3.3vw;
 }
-.page_7 .right{
-    height: 100%;
-    width: 30%;
-    
-}
-
-.page_7 .right img{
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
-.page_7 .right .txt{
-    display: flex;
-    justify-content: space-around;
+.page_7 .right {
+  height: 100%;
+  width: 30%;
 }
 
-.page_7 .right .txt p{
-    width: 50%;
-    font-family: 'RightGrotesk';
-    font-size: 1vw;
-
+.page_7 .right img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.page_7 .right .txt {
+  display: flex;
+  justify-content: space-around;
 }
 
-.page_7 .right .txt h3{
-    font-family: 'RightGrotesk';
-    font-size: 1.5vw;
-    font-weight: 500;
+.page_7 .right .txt p {
+  width: 50%;
+  font-family: "RightGrotesk";
+  font-size: 1vw;
+}
 
+.page_7 .right .txt h3 {
+  font-family: "RightGrotesk";
+  font-size: 1.5vw;
+  font-weight: 500;
 }
 
 /* page_7 ends------------------------------------------------- */
 
-.textAnimation{
-    width: 1005;
-    height: auto;
-    border-top: .2vw solid #111;
-    border-bottom: .2vw solid #111;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    padding: 1vw 0vw;
-    gap: 2vw;
-    
+.textAnimation {
+  width: 1005;
+  height: auto;
+  border-top: 0.2vw solid #111;
+  border-bottom: 0.2vw solid #111;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  padding: 1vw 0vw;
+  gap: 2vw;
 }
-.textAnimation::-webkit-scrollbar{
-    display: none;
+.textAnimation::-webkit-scrollbar {
+  display: none;
 }
-.textAnimation h1{
-    flex-shrink: 0;
-    font-family: 'RightGroteskBold';
-    font-size: 3.3vw;
-    letter-spacing: 3px;
-    font-weight:900px;
-    -webkit-text-stroke: 2px #111;
-    color: transparent;
-    animation: txtAnimation 7s infinite linear;
+.textAnimation h1 {
+  flex-shrink: 0;
+  font-family: "RightGroteskBold";
+  font-size: 3.3vw;
+  letter-spacing: 3px;
+  font-weight: 900px;
+  -webkit-text-stroke: 2px #111;
+  color: transparent;
+  animation: txtAnimation 7s infinite linear;
 }
 @keyframes txtAnimation {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-    
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* textAnimation section ends--------------------------------------------- */
 
-.blog_Sec{
-    height: 80%;
-    width: 100%;
-    padding: 3.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.blog_Sec {
+  height: 80%;
+  width: 100%;
+  padding: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.blog_Sec .left{
-    height: 100%;
-    width: 18%;
+.blog_Sec .left {
+  height: 100%;
+  width: 18%;
 }
 
-.blog_Sec .left h1{
-    font-family: 'RightGroteskBold';
-    font-size: 3.6vw;
+.blog_Sec .left h1 {
+  font-family: "RightGroteskBold";
+  font-size: 3.6vw;
 }
 
-.blog_Sec .right{
-    height: 100%;
-    width: 68%;
-    display: flex;
-    padding: 2vw;
-    
+.blog_Sec .right {
+  height: 100%;
+  width: 68%;
+  display: flex;
+  padding: 2vw;
 }
-.blog_Sec .right .leftDiv{
-    height: 100%;
-    width: 50%;
-    padding: 1.3vw;
+.blog_Sec .right .leftDiv {
+  height: 100%;
+  width: 50%;
+  padding: 1.3vw;
 }
-.blog_Sec .right .leftDiv p span{
-    margin-right: 1vw;
-    border: .1vw solid #111;
-    padding: .1vw .4vw;
-    border-radius: 50%;
-    font-size: 1.3vw !important;
+.blog_Sec .right .leftDiv p span {
+  margin-right: 1vw;
+  border: 0.1vw solid #111;
+  padding: 0.1vw 0.4vw;
+  border-radius: 50%;
+  font-size: 1.3vw !important;
 }
-.blog_Sec .right .leftDiv p{
-          font-family: 'RightGrotesk';
-          font-size: 1.3vw;
-          text-align: left;
-          margin-bottom: 2vw;
+.blog_Sec .right .leftDiv p {
+  font-family: "RightGrotesk";
+  font-size: 1.3vw;
+  text-align: left;
+  margin-bottom: 2vw;
 }
-.blog_Sec .right .leftDiv .bottom{
-    width: 100%;
-    height: calc(100% - 23%);
+.blog_Sec .right .leftDiv .bottom {
+  width: 100%;
+  height: calc(100% - 23%);
 }
-.blog_Sec .right .leftDiv .bottom img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.blog_Sec .right .leftDiv .bottom img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.blog_Sec .right .rightDiv .bottom{
-    width: 100%;
-    height: calc(100% - 23%);
-   
+.blog_Sec .right .rightDiv .bottom {
+  width: 100%;
+  height: calc(100% - 23%);
 }
-.blog_Sec .right .rightDiv .bottom img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.blog_Sec .right .rightDiv .bottom img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.blog_Sec .right .rightDiv p span{
-    margin-right: 1vw;
-    border: .1vw solid #111;
-    padding: .1vw .4vw;
-    border-radius: 50%;
-    font-size: 1.3vw !important;
+.blog_Sec .right .rightDiv p span {
+  margin-right: 1vw;
+  border: 0.1vw solid #111;
+  padding: 0.1vw 0.4vw;
+  border-radius: 50%;
+  font-size: 1.3vw !important;
 }
-.blog_Sec .right .rightDiv p{
-          font-family: 'RightGrotesk';
-          font-size: 1.3vw;
-          margin-bottom: 2vw;
+.blog_Sec .right .rightDiv p {
+  font-family: "RightGrotesk";
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
 }
-.blog_Sec .right .rightDiv{
-    height: 100%;
-    width: 50%;
-    padding: 1.3vw;
+.blog_Sec .right .rightDiv {
+  height: 100%;
+  width: 50%;
+  padding: 1.3vw;
 }
 
 /* BlogSec Ends------------------------------------------------------------------ */
 
-.footer{
-    width: 100%;
-    height: 40%;
-    border-top: .2vw solid #111;
-    border-bottom: .2vw solid #111;
-    display: flex;
-    cursor: pointer;
+.footer {
+  width: 100%;
+  height: 40%;
+  border-top: 0.2vw solid #111;
+  border-bottom: 0.2vw solid #111;
+  display: flex;
+  cursor: pointer;
 }
 
-.footer .left{
-    height: 100%;
-    width: 40%;
-    border-right: .2vw solid #111;
-    padding: 2vw;
+.footer .left {
+  height: 100%;
+  width: 40%;
+  border-right: 0.2vw solid #111;
+  padding: 2vw;
 }
-.footer .left .boxDiv{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer .left .boxDiv h1{
-    font-family: 'RightGroteskBold';
-    font-size: 3.3vw;
-    position: relative;
+.footer .left .boxDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer .left .boxDiv h1::after{
-    content: 'model management';
-    top: 50px;
-    left: 50px;
-    position: absolute;
-    font-size: 1vw;
-    color: gray;
-}
-.footer .left .boxDiv h1::before{
-    font-family: 'RightGrotesk';
-    content: 'c';
-    top: 0px;
-    left: 160px;
-    position: absolute;
-    font-size: 1.2vw;
-    color: gray;
-    font-weight: 400;
-    border: .1vw solid gray;
-    border-radius: 50%;
-    padding: 0px 5px 5px 5px;
-}
-.footer .left .boxDiv{
-    font-family: 'RightGrotesk';
-    font-size: 1.5vw;
+.footer .left .boxDiv h1 {
+  font-family: "RightGroteskBold";
+  font-size: 3.3vw;
+  position: relative;
 }
 
-.footer .mid{
-    height: 100%;
-    width: 20%;
-    border-right: .2vw solid #111;
-    padding: 3vw;
+.footer .left .boxDiv h1::after {
+  content: "model management";
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  font-size: 1vw;
+  color: gray;
+}
+.footer .left .boxDiv h1::before {
+  font-family: "RightGrotesk";
+  content: "c";
+  top: 0px;
+  left: 160px;
+  position: absolute;
+  font-size: 1.2vw;
+  color: gray;
+  font-weight: 400;
+  border: 0.1vw solid gray;
+  border-radius: 50%;
+  padding: 0px 5px 5px 5px;
+}
+.footer .left .boxDiv {
+  font-family: "RightGrotesk";
+  font-size: 1.5vw;
 }
 
-.footer .mid p{
-    font-family: 'RightGrotesk';
-    font-size: 1.5vw;
+.footer .mid {
+  height: 100%;
+  width: 20%;
+  border-right: 0.2vw solid #111;
+  padding: 3vw;
+}
+
+.footer .mid p {
+  font-family: "RightGrotesk";
+  font-size: 1.5vw;
 }
 
 .footer .right {
-    height: 100%;
-    width: 40%;
+  height: 100%;
+  width: 40%;
 }
-.footer .right .topDiv{
-    width: 100%;
-    height: auto;
-    border-bottom: .2vw solid #111;
+.footer .right .topDiv {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.2vw solid #111;
 }
-.footer .right .topDiv p{
-    font-family: 'RightGrotesk';
-    font-size: 1.5vw;
-    padding: 3vw;
+.footer .right .topDiv p {
+  font-family: "RightGrotesk";
+  font-size: 1.5vw;
+  padding: 3vw;
 }
-.footer .right .bottomContainer{
-    width: 100%;
-    height: auto;
-    padding: 1.3vw;
-}
-
-.footer .right .bottomContainer i{
-    font-size: 1.7vw;
-    margin-right: 10px;
+.footer .right .bottomContainer {
+  width: 100%;
+  height: auto;
+  padding: 1.3vw;
 }
 
-.footer .right .bottomContainer p{
-    font-family: 'RightGrotesk';
-    font-size: 1.2vw;
-    margin-top: 1vw;
+.footer .right .bottomContainer i {
+  font-size: 1.7vw;
+  margin-right: 10px;
+}
+
+.footer .right .bottomContainer p {
+  font-family: "RightGrotesk";
+  font-size: 1.2vw;
+  margin-top: 1vw;
 }
 
 /* footer section ends---------------------------- */
 
-@media (max-width:400px) {
-    nav{
-        height: 90px;
-        width: 100%;
-        border: .2vw solid #111;
-        display: flex;
-        align-items: center;
-        margin-top: 1.5vw;
-    }
-    nav .left{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-right: none;
-        padding: .4vw 3vw;
-        height: 100%;
-        width: 100%;
-    }
-    nav .ri-menu-line{
-        font-size: 9vw;
-        display: inline-block;
-        margin-right: 5vw;
-    }
-    .left .logo a{
-        text-decoration: none;
-        color: #111;
-        font-size: 12vw;
-        font-family: 'RightGroteskBold';
-    }
-    
-    .left .logo a::after{
-        content: 'model management';
-        top: 72px;
-        left: 80px;
-        position: absolute;
-        font-size: 3vw;
-        color: gray;
-    }
-    .left .logo a::before{
-        font-family: 'RightGrotesk';
-        content: 'c';
-        top: 30px;
-        left: 160px;
-        position: absolute;
-        font-size: 4vw;
-        color: gray;
-        font-weight: 600;
-        border: .4vw solid gray;
-        border-radius: 50%;
-        padding: 0px 5px 3px 5px;
-    }
-    nav p{
-        display: none;
-    }
-    
-    nav .mid{
-       display: none;
-    }
-    
-    nav .blog{
-       display: none;
-    }
-    nav .right{
-       display: none;
-    }
-    nav .right i{
-       display: none;
-    }
+@media (max-width: 400px) {
+  nav {
+    height: 90px;
+    width: 100%;
+    border: 0.2vw solid #111;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+  }
+  nav .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    padding: 0.4vw 3vw;
+    height: 100%;
+    width: 100%;
+  }
+  nav .ri-menu-line {
+    font-size: 9vw;
+    display: inline-block;
+    margin-right: 5vw;
+  }
+  .left .logo a {
+    text-decoration: none;
+    color: #111;
+    font-size: 12vw;
+    font-family: "RightGroteskBold";
+  }
 
-    /* nav section ends----------------------- */
+  .left .logo a::after {
+    content: "model management";
+    top: 72px;
+    left: 80px;
+    position: absolute;
+    font-size: 3vw;
+    color: gray;
+  }
+  .left .logo a::before {
+    font-family: "RightGrotesk";
+    content: "c";
+    top: 30px;
+    left: 160px;
+    position: absolute;
+    font-size: 4vw;
+    color: gray;
+    font-weight: 600;
+    border: 0.4vw solid gray;
+    border-radius: 50%;
+    padding: 0px 5px 3px 5px;
+  }
+  nav p {
+    display: none;
+  }
 
-    .hero{
-        height: 60%;
-        position: relative;
-        padding: 4vw;
-    }
-    .videoContainer .content{
-        padding:2vw 2vw;
-    }
-    .videoContainer .content .up h1{
-        font-size: 9vw;
-        line-height: 1;
-    }
-    .box{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        position: relative;
-        border: 2px solid #ddd;
-        
-    }
-    .line{
-        margin-top: 3vh;
-    }
-    .down{
-        margin-top: 2vw;
-    }
-    .down p{
-        font-size: 3.3vw;
-    }
-    .down i{
-        font-size: 6vw;
-    }
-    
-    /* hero section ends--------------------------------------------------------- */
-    .models{
-        height: 30%;
-    }
-    .imgDiv{
-        /* background-color:#ddd; */
-         width: 210%;
-        padding: 9vw 3vw;
-        animation: scroll 10s infinite linear;
+  nav .mid {
+    display: none;
+  }
 
-    }
-    .imgDiv img{
-        height:100%;
-        width: 16.5%;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position:top;
-    
-    }
+  nav .blog {
+    display: none;
+  }
+  nav .right {
+    display: none;
+  }
+  nav .right i {
+    display: none;
+  }
 
-    /* models section ends----------------------------------------------- */
-    .letters{
-        height: 10vw;
-        padding-left: .5vw;
-        padding-right:0vw ;
-        gap: 0vw;
-    }
-    .letters h3{
-        font-size: 5vw;
-    }
-    .letters .alphabet{
-        height: 100%;
-        width: 100%;
-    }
-    .letters p{
-        font-size: 3.1vw;
-        margin-left: .3vw;
-    }
+  /* nav section ends----------------------- */
 
-    /* letters section ends---------------------------------------- */
-    .page_2{
-        height: 80%;
-        flex-direction: column;
-        border: 1px solid #111;
-        gap: 0vw;
-    }
-    .page_2 .left{
-        height: 50%;
-        width: 100%;
-    }
-    .page_2 .left img{
-        height: 90%;
-        object-position: 30% 30%;   
-    }
-    
-    .page_2 .left h1{
-        font-size: 5.6vw;
-    }
-    .page_2 .right{
-        height: 50%;
-        width: 100%;
-        margin-top: 2vw;   
-    }
-    
-    .page_2 .right img{
-        width: 100%;
-        height: 85%;
-        object-fit: cover;
-    }
-    .page_2 .right .txt{
-        display: block;
-    }
-    .page_2 .right .txt p{
-        width: 60%;
-        font-size: 2.6vw;
-        font-weight: 600;
-    }
-    .page_2 .right .txt h3{
-      display: none;
-    }
-    
-    
+  .hero {
+    height: 60%;
+    position: relative;
+    padding: 4vw;
+  }
+  .videoContainer .content {
+    padding: 2vw 2vw;
+  }
+  .videoContainer .content .up h1 {
+    font-size: 9vw;
+    line-height: 1;
+  }
+  .box {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #ddd;
+  }
+  .line {
+    margin-top: 3vh;
+  }
+  .down {
+    margin-top: 2vw;
+  }
+  .down p {
+    font-size: 3.3vw;
+  }
+  .down i {
+    font-size: 6vw;
+  }
+
+  /* hero section ends--------------------------------------------------------- */
+  .models {
+    height: 30%;
+  }
+  .imgDiv {
+    /* background-color:#ddd; */
+    width: 220%;
+    padding: 9vw 3vw;
+    animation: scroll 10s infinite linear;
+  }
+  .imgDiv img {
+    height: 100%;
+    width: 16.5%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .models .imgDiv_1 img {
+    margin-left: 0.4vw;
+  }
+  .models .imgDiv .img {
+    margin-left: 0.2vw;
+  }
+  /* models section ends----------------------------------------------- */
+  .letters {
+    height: 10vw;
+    padding-left: 0.5vw;
+    padding-right: 0vw;
+    gap: 0vw;
+  }
+  .letters h3 {
+    font-size: 5vw;
+  }
+  .letters .alphabet {
+    height: 100%;
+    width: 100%;
+  }
+  .letters p {
+    font-size: 3.1vw;
+    margin-left: 0.3vw;
+  }
+
+  /* letters section ends---------------------------------------- */
+  .page_2 {
+    height: 80%;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  .page_2 .left {
+    height: 50%;
+    width: 100%;
+  }
+  .page_2 .left img {
+    height: 90%;
+    object-position: 30% 30%;
+  }
+
+  .page_2 .left h1 {
+    font-size: 5.6vw;
+  }
+  .page_2 .right {
+    height: 50%;
+    width: 100%;
+    margin-top: 2vw;
+  }
+
+  .page_2 .right img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+  }
+  .page_2 .right .txt {
+    display: block;
+  }
+  .page_2 .right .txt p {
+    width: 60%;
+    font-size: 2.6vw;
+    font-weight: 600;
+  }
+  .page_2 .right .txt h3 {
+    display: none;
+  }
+
+  /*page_2 section ends-------------------------  */
+
+  .page_3 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw 3.5vw 2vw 3.5vw;
+    gap: 4vw;
+  }
+  .page_3 .left .imgDiv_1 {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+  .page_3 .left .imgDiv_1 i {
+    font-size: 5.5vw;
+    left: 50%;
+  }
+  .page_3 .left {
+    height: 40%;
+    width: 100%;
+  }
+  .page_3 .left h2 {
+    bottom: 10px;
+    left: 50px;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+
+  .page_3 .right {
+    height: 60%;
+    width: 100%;
+  }
+  .page_3 .right img {
+    object-position: top;
+  }
+
+  /* page_3 section ends------------------------------------- */
+
+  .page_4 {
+    height: 50%;
+  }
+
+  .page_4Container {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* page_4 section ends------------------------------------- */
+
+  .update {
+    height: 45%;
+    width: 100%;
+    padding: 2vw;
+  }
+  .update h1 {
+    font-size: 9vw;
+  }
+
+  .update .contentDiv {
+    height: 100%;
+    width: 100%;
+    padding: 2.6vw;
+  }
+
+  .update .contentDiv .elements img {
+    display: none;
+  }
+  .update .contentDiv .elements p {
+    font-size: 4vw;
+    padding-top: 1.2vw;
+  }
+
+  .update .contentDiv .elements h2 {
+    font-size: 4.5vw;
+  }
+  .sec {
+    margin-right: 10vw;
+  }
+  .sec_2 {
+    margin-right: 14vw;
+  }
+  .update .contentDiv .elements h2::after {
+    font-size: 2.5vw;
+  }
+
+  /* updates section ends------------------------------------- */
 }
