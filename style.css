@@ -647,7 +647,7 @@ nav .right i {
 /* page_7 ends------------------------------------------------- */
 
 .textAnimation {
-  width: 1005;
+  width: 100%;
   height: auto;
   border-top: 0.2vw solid #111;
   border-bottom: 0.2vw solid #111;
@@ -1134,4 +1134,239 @@ nav .right i {
   }
 
   /* updates section ends------------------------------------- */
+
+  .page_5 {
+    flex-direction: column;
+    gap: 2vw;
+    padding: 3.5vw;
+  }
+  .page_5 .left {
+    width: 100%;
+    height: 40%;
+    margin-top: 5vw;
+  }
+
+  .page_5 .left img {
+    object-position: 30% 30%;
+  }
+
+  .page_5 .right {
+    height: 100%;
+    width: 100%;
+  }
+
+  .page_5 .right .top h1 {
+    font-size: 4.6vw;
+    margin-top: 5px;
+  }
+
+  .page_5 .right .top h3 {
+    font-size: 3.2vw;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .page_5 .right .top p {
+    font-weight: 500;
+    font-size: 2.4vw;
+    margin: 10px 0px 0px 0px;
+  }
+  .page_5 .right .bottom {
+    margin-top: 10px;
+    height: calc(100% - 32%);
+  }
+  .page_5 .right .bottom .right {
+    margin-top: 0px;
+  }
+  .page_5 .right .bottom .left {
+    margin-top: 0px;
+  }
+  .page_5 .right .bottom .left img {
+    object-position: 50%;
+  }
+
+  /* page_5 section ends---------------------------- */
+
+  .page_6 {
+    height: 65%;
+  }
+
+  .page_6Container {
+    height: 100%;
+    width: 100%;
+  }
+  .page_6Container img {
+    object-position: 42%;
+  }
+
+  /* page_6 section ends---------------------------------------- */
+
+  .page_7 {
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .page_7 .left {
+    height: 50%;
+    width: 100%;
+  }
+
+  .page_7 .left h1 {
+    font-family: "RightGroteskBold";
+    font-size: 3.3vw;
+  }
+  .page_7 .right {
+    height: 50%;
+    width: 100%;
+  }
+
+  .page_7 .right .txt {
+    display: block;
+  }
+
+  .page_7 .right .txt p {
+    width: 75%;
+    font-size: 3.5vw;
+  }
+
+  .page_7 .right .txt h3 {
+    display: none;
+  }
+
+  /* page_7 section ends------------------------------- */
+
+  .textAnimation {
+    border-top: 1vw solid #111;
+    border-bottom: 1vw solid #111;
+  }
+  .textAnimation h1 {
+    font-size: 10vw;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #111;
+  }
+  /* textAnimation section ends---------------------------- */
+
+  .blog_Sec {
+    flex-direction: column;
+    padding: 3.5vw;
+  }
+
+  .blog_Sec .left {
+    height: auto;
+    width: 100%;
+  }
+
+  .blog_Sec .left h1 {
+    font-size: 8vw;
+    margin-top: 5vw;
+  }
+
+  .blog_Sec .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+  }
+  .blog_Sec .right .leftDiv {
+    height: 50%;
+    width: 100%;
+    padding: 1vw;
+  }
+  .blog_Sec .right .leftDiv p span {
+    border: 0.3vw solid #111;
+    padding: 0.1vw 0.5vw;
+    font-size: 3vw !important;
+  }
+  .blog_Sec .right .leftDiv p {
+    font-size: 3.5vw;
+  }
+  .blog_Sec .right .rightDiv .bottom img {
+    height: 86%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .blog_Sec .right .rightDiv p span {
+    border: 0.3vw solid #111;
+    padding: 0.1vw 0.5vw;
+    font-size: 3vw !important;
+  }
+  .blog_Sec .right .rightDiv p {
+    font-size: 3.5vw;
+  }
+  .blog_Sec .right .rightDiv {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* blog_sec section ends------------------------------- */
+
+  .footer {
+    height: 20%;
+    border-top: 0.4vw solid #111;
+    border-bottom: 0.4vw solid #111;
+  }
+  
+  .footer .left {
+    height: 100%;
+    width: 40%;
+    border-right: 0.4vw solid #111;
+    padding: 2vw;
+  }
+  
+  .footer .left .boxDiv h1 {
+    font-size: 5vw;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer .left .boxDiv h1::after {
+    content:"model management";
+    top: 20px;
+    left: 20px;
+    font-size: 2.3vw;
+  }
+  .footer .left .boxDiv h1::before {
+    content: "c";
+    top: 0px;
+    left: 70px;
+    position: absolute;
+    font-size: 2.3vw;
+    color: gray;
+    font-weight: 600;
+    border: 0.4vw solid gray;
+    padding: 0px 3px 2px 3px;
+  }
+  .footer .left .boxDiv {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+  
+  .footer .mid {
+    border-right: 0.4vw solid #111;
+    padding: 2.7vw 0vw 0vw 2vw;
+  }
+  
+  .footer .mid p {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+  
+  .footer .right .topDiv {
+    border-bottom: 0.4vw solid #111;
+  }
+  .footer .right .topDiv p {
+    font-size: 2.5vw;
+    font-weight: 600;
+    padding: 2.6vw 0vw 2vw 0vw;
+  }  
+  .footer .right .bottomContainer i {
+    font-size: 4vw;
+    margin-right: 10px;
+  }
+  
+  .footer .right .bottomContainer p {
+    font-size: 2.3vw;
+    font-weight: 500;
+    margin-top: 1vw;
+  }
+  /* footer section ends------------------------------------ */
 }
